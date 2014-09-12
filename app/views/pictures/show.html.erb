@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<h2>Picture Detail</h2>
+<p>
+  <strong>Title:</strong>
+  <%= @picture.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @picture.description %>
+</p>
+<p>
+  <strong>Image:</strong>
+  <img src="<%= @picture.image.url(:thumb) %>">
+</p>
+
+<br>
+
+<h2>Create comment</h2>
+
+<%= render "comments/form" %>
+
+<%= link_to 'Back to list of pictures', pictures_path %>
+
+<h2> Comments </h2> 
+<%= link_to "Show Comments", picture_comments_path(@picture), :remote => true%>
+<div id="comment_list"></div>

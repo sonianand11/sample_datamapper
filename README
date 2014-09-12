@@ -1,0 +1,12 @@
+== Welcome to Rails
+
+This is an example usage of datamapper with elasticsearch
+
+
+== Configuration Information
+
+OS : Ubuntu 14.04
+
+Rails : 3.1.0
+
+Elastisearch : 0.19.9

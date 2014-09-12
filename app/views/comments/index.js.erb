@@ -1,0 +1,5 @@
+$("#comment_list").html("")
+<% @comments.each do |c| %>
+  $("#comment_list").append("Title : <%= c.title %> | Description : <%= c.description %> <br>")
+<% end %>
+
